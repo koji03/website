@@ -1,0 +1,49 @@
+.p-search{
+    &__btn{
+        &__item{
+            margin: $space-size_m $space-size_xs;
+            display: inline-block;
+            cursor: pointer;
+            padding: $space-size_m $space-size_xs;
+            box-sizing: border-box;
+            font-size: $font-size_s;
+            &:hover{
+                background: $white3;
+            }
+        }
+    }
+    &__box{
+        background: $white;
+        padding: $space-size_m;
+        width: 500px;
+        text-align: left;
+        height: 100px;
+        box-shadow: 0 0 7px 0px $shadow;
+        overflow-y: scroll;
+        margin: $space-size_m auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        @include mq('md'){
+            width: 90%;
+        }
+    }
+    &__list{
+        font-size: $font-size_m;
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            margin-right: $space-size_m;
+            margin: $space-size_xs;
+            padding: 0px $space-size_xl 0 $space-size_xs;
+            box-sizing: border-box;
+            border-radius: $border-radius_s;
+            line-height: 25px;
+            background: $white;
+            box-shadow: 0px 1px 4px 0px $shadow;
+        }
+        &__trash{
+            cursor: pointer;
+            color: $gray;
+        }
+    }
+}

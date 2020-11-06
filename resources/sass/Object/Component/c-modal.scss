@@ -1,0 +1,57 @@
+.c-modal{
+  /*　要素を重ねた時の順番　*/
+  z-index:20;
+
+  /*　画面全体を覆う設定　*/
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: $modal_color;
+  overflow-y: scroll;
+
+  /*　画面の中央に要素を表示させる設定　*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__window{
+    z-index: 2;
+    background: $white;
+    border-radius: 30px;
+    padding: $padding-large-size_l;
+    box-sizing: border-box;
+    min-width: 600px;
+    max-height: 600px;
+    overflow: scroll;
+    position: relative;
+    @include mq('md'){
+        min-width: 100%;
+    }
+  }
+  &__title{
+    &--icon{
+        color: $blue;
+        cursor: pointer;
+        font-size: $font-size_xl;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    &--text{
+        font-size: $font-size_l;
+        font-weight: bold;
+        & span{
+            cursor: pointer;
+        }
+    }
+  }
+  &__btn{
+    padding: $space-size_m $space-size_3l;
+    border-top: $border-gray;
+    &__item{
+        color: $blue;
+        cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.p-cp_ipcheck {
+    width: 15%;
+    margin: 3em auto 2em auto;
+	text-align: left;
+	@include mq('md'){
+		width: 50%;
+	}
+	&__input{
+		display: none;
+	}
+	&__label{
+		position: relative;
+		display: block;
+		padding: 12px 5px;
+		padding-right: 35px;
+		cursor: pointer;
+	}
+	&__checkbox{
+		position: absolute;
+	}
+}
+.p-cp_ipcheck input[type='checkbox'] + label:before,
+.p-cp_ipcheck input[type='checkbox'] + label:after {
+	position: absolute;
+	top: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: -7.5px;
+	content: '';
+}
+.p-cp_ipcheck input[type='checkbox'] + label:before {
+	right: 0;
+	width: 30px;
+	height: 15px;
+	border: 1px solid $white2;
+	border-radius: 15px;
+	background:$white2;
+}
+.p-cp_ipcheck input[type='checkbox'] + label:after {
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	-webkit-transition: all 200ms ease-out;
+	        transition: all 200ms ease-out;
+	border-radius: 50%;
+	background: $white3;
+}
+.p-cp_ipcheck input[type='checkbox']:checked + label:after {
+	right: 0;
+	background: $blue;
+}

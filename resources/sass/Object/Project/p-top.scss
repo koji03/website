@@ -1,0 +1,27 @@
+.p-top{
+    &__title{
+        text-align: center;
+        font-size: $font-size_3l;
+    }
+    &__box{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        margin: $space-size_3l auto 0 auto;
+        @include mq('md'){
+            width: 90%;
+        }
+        &__image{
+            width: 47%;
+            @include mq('md'){
+                display: none;
+            }
+        }
+        &__form{
+            width: 47%;
+            @include mq('md'){
+                width: initial;
+            }
+        }
+    }
+}

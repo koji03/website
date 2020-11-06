@@ -1,0 +1,87 @@
+.p-sidenav {
+    position: absolute;
+    box-sizing: border-box;
+    background: $white;
+    height: 100vh;
+    width: 250px;
+    overflow: scroll;
+    left: -250px;
+    box-shadow: 2px 5px 4px 0px $shadow;
+    z-index: 100;
+    transition: .4s;
+    @include mq(){
+        left: 0px;
+    }
+    @include mq('xl'){
+        left: 0px;
+    }
+    &__text{
+        @include mq('xl'){
+            display: none !important;
+            transition: 0;
+        }
+        &--left{
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+    }
+    &__icon{
+        color: $blue;
+        font-size: $font-size_xl;
+    }
+    &__wrap{
+        border-bottom: $border--blue;
+        margin-bottom: $space-size_m;
+        padding: $space-size_3l 0;
+        box-sizing: border-box;
+        &__item{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: $area-size_s;
+            padding-left: $space-size_3l;
+            box-sizing: border-box;
+            &:hover{
+                background-color: $white2;
+            }
+        }
+        &__title{
+            font-size: $font-size_s;
+            font-weight: bold;
+            color: $gray;
+            padding-left: $space-size_m;
+            padding: $space-size_m $space-size_xl $space-size_m $space-size_3l;
+            box-sizing: border-box;
+            display: flex;
+
+        }
+    }
+
+    &__list{
+        margin: 0 auto;
+        &__item{
+            height: $area-size_xs;
+            padding-left: $space-size_3l;
+            line-height: $area-size_xs;
+            cursor: pointer;
+            &:hover{
+                background-color: $white2;
+            }
+        }
+    }
+    &__setting{
+        display: flex;
+        flex-direction: column;
+        &__item{
+            padding-left: $space-size_3l;
+            padding: $space-size_m 0px $space-size_m $space-size_3l;
+            cursor: pointer;
+            &:hover{
+                background-color: $white2;
+            }
+        }
+    }
+    
+}

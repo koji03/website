@@ -1,0 +1,82 @@
+.p-info{
+    background: #5a98d8a6;
+    color: $white;
+    border-radius: $radius-size_s;
+    padding: $space-size_3l;
+    min-height: 100px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    @include mq(){
+        width: 80%;
+    }
+    &__text{
+        &--min{
+            font-size: $font-size_s;
+        }
+    }
+    &__error{
+        font-size: $font-size_s;
+        font-weight: initial;
+        color: $red;
+    }
+    &__list{
+        &__box{
+            position: relative;
+            height: $area-size_xs;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: $border-white;
+            padding: $space-size_m $space-size_3l;
+            @include mq(){
+                padding: $space-size_m 0;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+        &__item{
+            cursor: pointer;
+            @include mq(){
+                font-size: $font-size_s;
+                margin-right: $space-size_m;
+            }
+            &--width{
+                width: 120px;
+                @include mq(){
+                    width: 80px;
+                }
+            }
+        }
+    }
+    &__top{
+        align-items: center;
+        font-weight: bold;
+        border-bottom: $border-white;
+        padding-bottom: $space-size_m;
+        box-sizing: border-box;
+        &--button{
+            padding: $space-size_xs $space-size_m;
+            margin-bottom: $space-size_m;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border-radius: $radius-size_xs;
+            cursor: pointer;
+            width: 250px;
+            margin-bottom: $space-size_3l;
+            background: $orange;
+            @include mq(){
+                width: initial;
+            }
+            &:hover{
+                background: $hoverOrange;
+            }
+        }
+    }
+}
+.info__error{
+    color:$red
+}

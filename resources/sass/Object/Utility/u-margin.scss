@@ -1,0 +1,109 @@
+.u-margin__banner--top{
+    margin-top: $space-size_l;
+    @include mq('md'){
+        margin-top: $margin-large-size_l;
+    }
+}
+.u-margin__input--top{
+    margin-top: $space-size_l;
+}
+.u-margin__input{
+    margin-top: $margin-large-size_l;
+}
+.u-margin--top__large{
+    margin-top: $margin-large-size_3l;
+}
+.u-margin__textarea--top{
+    margin-top: $space-size_l;
+}
+.u-margin--bottom__large{
+    margin-bottom: $margin-large-size_3l;
+}
+.u-margin__form{
+    margin-top: $margin-large-size_xl;
+}
+.u-margin__title--bottom{
+    margin-bottom: $margin-large-size_xl;
+}
+.u-margin__btn--right{
+    margin-right: $space-size_l;
+}
+.u-margin__h2--bottom{
+    margin-bottom: $margin-large-size_l;
+}
+.u-margin__unfollow--bottom{
+    margin-bottom: $space-size_l;
+}
+.u-margin--error{
+    margin: $space-size_xs 0;
+}
+.u-margin--error--scheduled{
+    margin: $space-size_xs 0;
+}
+.u-margin__summary{
+    margin-bottom: $margin-large-size_xl;
+}
+.u-margin__summary__wrap{
+    margin-top: $margin-large-size_xl;
+}
+.u-margin__fade--top{
+    margin-top: $margin-large-size_l;
+}
+.u-margin__setting__title{
+    margin-bottom: $margin-large-size_xl;
+}
+.u-margin__setting__icon{
+    margin-right: $space-size_l;
+}
+.u-margin__switch{
+    margin: $space-size_xs 0;
+}
+.u-margin__modal__title--left{
+    margin-left: $margin-large-size_l;
+}
+.u-margin__scheduled__wrap{
+    margin: $margin-large-size_l 0;
+}
+.u-margin__summary--top{
+    margin-top: $margin-large-size_3l;
+}
+.u-margin__error--top{
+    margin-top: 400px;
+}
+.u-margin__shceduled__input__file{
+    margin: $space-size_l 0 0 0;
+}
+.u-margin__anchor--right{
+    margin-right: $space-size_l;
+}
+//search
+.u-margin__search--top{
+    margin-top: 20px;
+}
+.u-margin__number__button--top{
+    margin-top: $space-size_l;
+}
+.u-margin__scheduledTimeForm{
+    margin: $space-size_l 0;
+}
+
+//data
+.u-margin__data--min{
+    margin-top: $space-size_xs;
+}
+//sideNav{
+.u-margin__sidenav--right{
+    margin: 0 $space-size_3l;
+}
+
+//logo
+.u-marign__logo--medium{
+    margin-left: 40px;
+    @include mq(){
+        margin-left: 20px;
+    }
+}
+//restart
+.u-margin__restart--top{
+    margin-top: 100px;
+}

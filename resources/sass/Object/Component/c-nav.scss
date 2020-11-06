@@ -1,0 +1,42 @@
+.c-nav{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    &__icon{
+        font-size: $icon-size_l;
+        color: $blue;
+        &:hover{
+            color: $hoverBlue;
+        }
+    }
+    &__item{
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        right: 30px;
+    }
+    &__panel{
+        position: absolute;
+        top: -10px;
+        left: -200px;
+        border: $border-white3;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: $space-size_m 0;
+        box-sizing: border-box;
+        background: $white-opacity;
+        &__action{
+            border: none;
+            padding: $space-size_m $space-size_m;
+            box-sizing: border-box;
+            font-size: $font-size_m;
+            text-align: left;
+            background: $white2;
+            &:hover{
+                background: $white3;
+                cursor: pointer;
+             }
+        }
+    }
+}

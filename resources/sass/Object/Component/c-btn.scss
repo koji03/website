@@ -1,0 +1,23 @@
+.c-btn{
+    padding: $space-size_s $space-size_l;
+    box-sizing: border-box;
+    border-radius: $border-radius_s;
+    font-size: $font-size_xs;
+    border: $border--blue--large;
+    color: $blue;
+    cursor: pointer;
+    &:hover{
+        background: $white3;
+    }
+    &--orange{
+        border: $border--orange--large;
+        color: $white;
+        background: $orange;
+        &:hover{
+            background: $hoverOrange;
+        }
+    }
+    &--white{
+        background: $white2;
+    }
+}

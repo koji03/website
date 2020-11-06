@@ -1,0 +1,29 @@
+.p-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size_l;
+    position: relative;
+    height: $header_height;
+    &__title{
+        font-weight: bold;
+        font-style: italic;
+        font-size: $font-size_xl;
+        color: $black;
+        width: 120px;
+        @include mq(){
+            display: block;
+        }
+    }
+    &__icon{
+        color: $blue;
+        position: absolute;
+        left: -10px;
+        top: 23px;
+        font-size: 24px;
+        cursor: pointer;
+        @include mq(){
+            left: 0;
+        }
+    }
+}

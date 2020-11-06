@@ -1,0 +1,104 @@
+.p-scheduled{
+    &__images{
+        max-height: $area-size_xl;
+        overflow-y: scroll;
+        &__item{
+            margin: $space-size_m 0;
+            &__image{
+            max-width: 300px;
+            max-height: $area-size_xl;
+            cursor: pointer;
+            }
+        }
+    }
+    &__account{
+        &__item{
+            height: $area-size_s;
+            line-height: $area-size_s;
+            cursor: pointer;
+            &:hover{
+                background: $white2;
+            }
+        }
+    }
+    &__list{
+        overflow-y: scroll;
+        max-height: $area-size_xl;
+        &__item{
+            height: 20px;
+            background: $white;
+            padding: $space-size_m;
+            margin-bottom: $space-size_xs;
+            border-radius: $border-radius_m;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    }
+    &__form{
+        &--top{
+            display: flex;
+            justify-content: center;
+        }
+        &--bottom{
+            display: flex;
+            margin-top: $space-size_3l;
+            justify-content: center;
+        }
+        &__wrap{
+            width: 150px;
+            background:$white;
+            padding: $space-size_m $space-size_m;
+            margin: 0 $space-size_m;
+            border: $border--blue;
+            border-radius: $border-radius_m;
+            @include mq('md'){
+                width: initial;
+                min-width: $area-size_s;
+            }
+        }
+        &__textarea{
+            width: 100%;
+            background:$white;
+            padding: $space-size_xl $space-size_m;
+            margin: 0 $space-size_m;
+            border: $border--blue;
+            margin-top: $margin-large-size_l;
+            border-radius: $border-radius_s;
+        }
+        &__tweet{
+            &__textarea{
+                border: $border-gray;
+                width: 100%;
+                padding: $space-size_xs $space-size_m;
+                box-sizing: border-box;
+                height: $area-size_xl;
+                font-size: $font-size_m;
+                background: initial;
+                border-radius: $border-radius_m;
+                @include mq('md'){
+                    height: 120px;
+                }
+            }
+        }
+        &__file{
+            background: initial;
+            font-size: $font-size_s;
+            height: $area-size_xs;
+        }
+        &__text{
+            margin-bottom: $space-size_xs;
+            &--pointer{
+                cursor: pointer;
+            }
+        }
+        &__select{
+            &__item{
+                border: none;
+                width: 100%;
+                font-size: $font-size_m;
+                padding: $space-size_xs 0px;
+                background:$white;
+            }
+        }
+    }
+}

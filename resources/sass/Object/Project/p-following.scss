@@ -1,0 +1,17 @@
+.p-following{
+    &__message{
+        font-weight: bold;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background: $white-opacity;
+    }
+    &__image{
+        background-image:  url("/images/main3.jpg");
+        background-size: inherit;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+}

@@ -1,0 +1,80 @@
+.p-data{
+    &__top{
+        width: $home_width;
+        padding: $space-size_3l;
+        box-sizing: border-box;
+        font-weight: bold;
+        &__title{
+            padding-left: 25%;
+            font-size: $font-size_xl;
+        }
+    }
+    &__text{
+        margin-top: $space-size_xs;
+        &--bold{
+            font-weight: bold;
+            margin-bottom: $space-size_m;
+        }
+    }
+    &__wrap{
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: $border-gray;
+        display: flex;
+        flex-wrap: wrap;
+        padding: $space-size_m $space-size_m $space-size_m 20%;
+        @include mq(){
+            padding: $space-size_m 0;
+        }
+    }
+    &__box{
+        overflow: hidden;
+        width: 270px;
+        height: 320px;
+        margin-top: $space-size_3l;
+        @include mq(){
+            width: 100%;
+            height: 280px;
+        }
+        &__title{
+            box-sizing: border-box;
+            font-size: $font-size_m;
+            font-weight: bold;
+            height: 35%;
+            background: #e0e5e8;
+            padding: $space-size_3l 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: $border-gray;
+            @include mq(){
+                border-right: initial;
+            }
+            &--border{
+                border-left: $border-gray;
+                @include mq(){
+                    border-left: initial;
+                }
+            }
+        }
+        &__main{
+            height: 100%;
+            overflow: scroll;
+            box-sizing: border-box;
+            @include mq(){
+                padding: 0 $space-size_l 30% $space-size_l;
+            }
+        }
+        &__list{
+            margin-top: $space-size_xl;
+            border-bottom: $border-gray;
+            padding-bottom: $space-size_xs;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__item{
+                margin-top: $space-size_xs;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.c-setting{
+    &__image{
+        background-image:  url("/images/main3.jpg");
+        background-size: cover;
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: center; 
+    }
+    &__note{
+        line-height: 30px;
+        font-weight: bold;
+        width: 30%;
+        margin: $space-size_3l auto 0 auto;
+        text-align: left;
+        @include mq('md'){
+            width: 80%;
+        }
+        &__list{
+            &__item{
+                border-bottom: $border-gray;
+                margin-top: $space-size_xl;
+            }
+        }
+    }
+    &__border{
+        border-bottom: $border-gray;
+    }
+    &__wrap{
+        text-align: center;
+        padding: 80px $space-size_3l;
+        box-sizing: border-box;
+    }
+    &__icon{
+        font-size: $icon-size_3l;
+        cursor: pointer;
+    }
+    &__title{
+        margin: $space-size_xs 0;
+        font-size: $font-size_3l;
+        cursor: pointer;
+    }
+    &__switch{
+        font-size: $icon-size_xl;
+        cursor: pointer;
+    }
+    &__form{
+        &__text{
+            border: none;
+            background: $white;
+            font-size: $font-size_m;
+            padding: $space-size_xs $space-size_m;
+            box-sizing: border-box;
+            border-radius: $border-radius_s;
+            color: $black;
+        }
+        &__button{
+            border: none;
+            font-size: $font-size_s;
+            padding: $space-size_xs $space-size_m;
+            box-sizing: border-box;
+            border-radius: $border-radius_m;
+            color: $black;
+            cursor: pointer;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        width: 215px;
+        margin: 0 auto;
+        text-align: left;
+            &__item{
+                margin: $space-size_xs 0;
+                position: relative;
+            }
+            &__icon{
+                position: absolute;
+                right: 0px;
+                top: .1em;
+                cursor: pointer;
+            }
+    }
+}

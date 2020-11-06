@@ -1,0 +1,8 @@
+.c-main{
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    @include mq('md'){
+        width: 90%;
+    }
+}

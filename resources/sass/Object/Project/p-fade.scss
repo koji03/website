@@ -1,0 +1,19 @@
+.p-fade-enter-active,.p-fade-leave-active{
+    transform: translate(0px, 0px); 
+    transition: .3s;
+}
+.p-fade-enter,.p-fade-leave-to{
+    transform: translateY(-1em) translateY(0px);
+    opacity: -.2;
+    margin-bottom: -1%;
+}
+
+.p-list_fade-enter-active,.p-list_fade-leave-active{
+    transform: translate(0px, 0px); 
+    transition: .3s;
+}
+.p-list_fade-enter,.p-list_fade-leave-to{
+    transform: translateY(-1em) translateY(0px);
+    opacity: -.2;
+    margin-bottom: -1%;
+}

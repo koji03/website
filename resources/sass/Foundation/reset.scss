@@ -1,0 +1,262 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+  background-color:#ecedef;	
+  word-break: break-all;
+  color: 212121;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+li{
+  list-style: none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  color: initial;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+html{
+  font-family:'Lora', 'Lato', 'Noto Sans JP', "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+input,
+button,
+textarea,
+select {
+  /* デフォルトスタイルをリセット */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* font-familyを継承しないので、継承させる */
+  font-family: inherit;
+
+  /* iOSの角丸をリセット */
+  border-radius: 0;
+
+  /* box-size */
+  box-sizing: border-box;
+
+  /* 文字の大きさ iOSでズームさせないために16px以上を指定 */
+  font-size: 16px;
+
+  /* 文字色を親から継承 */
+  color: inherit;
+}
+
+label {
+  /* iOSでのlabelとinput,select,textareaの関連付け */
+  cursor: pointer;
+}
+
+/* スピンボタン非表示 chrome,safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-outer-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-outer-spin-button,
+input[type="week"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* スピンボタン非表示(firefox) */
+input[type="number"],
+input[type="month"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="time"],
+input[type="date"] {
+  -moz-appearance: textfield;
+}
+
+/* クリアボタン非表示 */
+input[type="date"]::-webkit-clear-button,
+input[type="month"]::-webkit-clear-button,
+input[type="datetime-local"]::-webkit-clear-button,
+input[type="time"]::-webkit-clear-button,
+input[type="week"]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+/* input */
+input {
+  /* 背景色(任意の色を指定) */
+  background-color: #eee;
+
+  /* inputの枠線を消す */
+  border: 1px solid transparent;
+  transition: border 0.2s ease-out;
+
+  /* 文字色を親から継承 */
+  color: inherit;
+
+  /* 任意の高さ */
+  height: 46px;
+
+  /*inputのフォーカス時の枠線を消す*/
+  outline: 0;
+}
+
+/* inputにフォーカスが当たっている時 */
+input:focus {
+  border-bottom: 1px solid#e74c3c;
+}
+/* サーチキャンセルボタンのデザイン変更 */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* サーチキャンセルボタンを非表示にする場合 */
+  -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+/* パスワードの表示/非表示の切り替えスイッチ表示(IE、Edge)の非表示 */
+input[type=password]::-ms-reveal{
+   display:none;
+ }
+
+textarea {
+  padding: 10px;
+  border-radius: 0;
+  resize: none;
+  border: 1px solid transparent;
+  transition: border 0.2s ease-out;
+  outline: none;
+  background-color: #eee;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+textarea:focus {
+  border-bottom: 1px solid #e74c3c;
+  box-shadow: none;
+  outline: none;
+}
+
+//フッターを固定する。
+body,
+#wrapper {
+min-height: 100vh;
+position: relative;/*←相対位置*/
+padding-bottom: 120px;/*←footerの高さ*/
+box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+.l-footer {
+position: absolute;/*←絶対位置*/
+bottom: 0; /*下に固定*/
+}

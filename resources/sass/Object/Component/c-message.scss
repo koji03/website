@@ -1,0 +1,12 @@
+.c-message{
+    width: 100%;
+    z-index: 30;
+    background: $green;
+    height: $area-size_l;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    text-align: center;
+    line-height: $area-size_l;
+    font-weight: bold;
+}

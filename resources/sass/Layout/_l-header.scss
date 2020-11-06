@@ -1,0 +1,13 @@
+.l-header{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 100%;
+    height: $header_height;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    background: $white-opacity;
+    box-shadow: 0px 6px 5px 3px #a7a5a542;
+}

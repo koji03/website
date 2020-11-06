@@ -1,0 +1,13 @@
+.p-start{
+    height: $area-size_l;
+    line-height: $area-size_l;
+    border-top: $border-gray;
+    border-bottom: $border-gray;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        transform: translateY(-2px);
+        transition: .05s;
+        box-shadow: 0px 4px 0px 0px $gray;
+    }
+}

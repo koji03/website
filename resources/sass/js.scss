@@ -1,0 +1,133 @@
+
+.js_search__btn__color{
+    background: $white3;
+}
+
+.js_logo_padding__left{
+    position: relative;
+    left: 40px;
+}
+.js_logo__active{
+    animation: setOpacity .25s forwards;
+}
+@keyframes setOpacity{
+0% {
+    opacity: 0;
+}
+90%{
+    opacity: 0;
+}
+100%{
+    opacity: 0;
+}
+}
+.js_sidenav__show{
+    animation: setOpacity2 .25s forwards;
+}
+
+@keyframes setOpacity2{
+    0% {
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.js_sidenav__error{
+    color:$red
+}
+.js_sidenav__cursor{
+    @include mq('xl'){
+        cursor: pointer;
+    }
+    &:hover{
+        @include mq('xl'){
+            background: $white2;
+        }
+    }
+}
+.js_sidenav__move{
+    left: 0px;
+    transition: .4s;
+    @include mq('xl'){
+        width: $area-size_l;
+    }
+    @include mq(){
+        left: -250px;
+        width: 250px;
+    }
+}
+.js_sidenav__hide{
+    @include mq('xl'){
+        animation: setOpacity .25s forwards;
+    }
+}
+@keyframes setOpacity{
+    0% {
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.js_sidenav__active{
+    display: block !important;
+}
+.js_active__color{
+    background: $white2;
+}
+.js_hide__account__list{
+    animation: sizeScale .3s forwards;
+}
+@keyframes sizeScale{
+    0% {
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: .8;
+        height:35px;
+    }
+    40%{
+        opacity: .6;
+        height:30px;
+    }
+    50%{
+        opacity: .5;
+        height:25px;
+    }
+    60%{
+        opacity: .4;
+        height:20px;
+    }
+    70%{
+        opacity: .3;
+        height:15px;
+    }
+    80%{
+        opacity: .2;
+        height:10px;
+    }
+    90%{
+        opacity: .1;
+        height:5px;
+    }
+    100% {
+        opacity: 0;
+        visibility:hidden;
+        height:0;
+    }
+}

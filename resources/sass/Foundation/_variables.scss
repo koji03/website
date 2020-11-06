@@ -1,0 +1,83 @@
+// Colors
+$gray:#525252;
+
+$blue: #5b98d8;
+$hoverBlue: #54b2f7;
+$orange: #ec8126;
+$hoverOrange: #d46505;
+
+//数字が大きくなるほど色が濃くなる。
+$white-opacity:#f7f7f7e8;
+$white:#f7f7f7;
+$white2: #e9ecf1;
+$white3:#cecfd8;
+
+$black:#212121;
+
+$gray-opacity:#6b6a6abd;
+$gray:#6b6a6a;
+
+$shadow:#65656540;
+$green:#c5ffeaeb;
+
+$red:#e60e0e;
+$modal_color:rgba(0,0,0,0.5);
+
+
+$header_height: 70px;
+$account_list_width:15%;
+$home_width:100%;
+
+//font-size
+$font-size_xs: 12px;
+$font-size_s: 14px;
+$font-size_m:16px;
+$font-size_l:20px;
+$font-size_xl:24px;
+$font-size_3l:28px;
+
+//icon_size
+$icon-size_m:28px;
+$icon-size_l:30px;
+$icon-size_xl:34px;
+$icon-size_3l:70px;
+$icon-size_max:100px;
+
+//margin-large
+$margin-large-size_l:30px; 
+$margin-large-size_xl:60px; 
+$margin-large-size_3l:180px;
+
+//padding-large
+$padding-large-size_l:40px;
+
+//space
+$space-size_xs:4px;
+$space-size_s:8px;
+$space-size_m:10px;
+$space-size_l:12px;
+$space-size_xl:14px;
+$space-size_3l:18px;
+
+
+//border-radius
+$radius-size_xs:4px;
+$radius-size_s:8px;
+$border-radius_s:5px;
+$border-radius_m:10px;
+
+//border
+$border--blue--large:3px solid $blue;
+$border--orange--large:3px solid $orange; 
+$border-white:1px solid $white;
+$border-white3:1px solid $white3;
+$border-gray:1px solid $gray;
+$border--blue:1px solid $blue;
+
+//height&width
+$area-size_xs:30px;
+$area-size_s:40px;
+$area-size_m:50px;
+$area-size_l:60px;
+$area-size_xl:150px;
+
